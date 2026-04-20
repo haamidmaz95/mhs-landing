@@ -6,7 +6,7 @@ Conversion-focused landing page for the Manufactured & Modular Housing Sales Gui
 Pure HTML + CSS + vanilla JS. Single file. No build step.
 
 ## Deploy
-Deployed on Vercel: [URL once deployed]
+Deployed on Vercel: https://mhs-landing.vercel.app
 
 ## Before going live
 1. Wire form submission to GHL webhook (see `index.html` `TODO` comment)
