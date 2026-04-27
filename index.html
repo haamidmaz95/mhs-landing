@@ -343,8 +343,8 @@ form { display: flex; flex-direction: column; gap: 14px; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 15px 20px;
+  gap: 12px;
+  padding: 13px 20px;
   background: var(--white);
   color: var(--ink);
   border: 1.5px solid var(--ink);
@@ -353,10 +353,32 @@ form { display: flex; flex-direction: column; gap: 14px; }
   font-size: 14px;
   font-weight: 600;
   transition: all 0.2s;
+  text-align: left;
 }
 .skool-btn:hover {
   background: var(--ink);
   color: var(--paper);
+}
+.skool-btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  gap: 3px;
+}
+.skool-btn-title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+.skool-btn-sub {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--mute);
+  letter-spacing: 0.01em;
+}
+.skool-btn:hover .skool-btn-sub {
+  color: var(--paper);
+  opacity: 0.75;
 }
 .skool-btn .skool-mark {
   width: 22px;
@@ -863,7 +885,10 @@ footer a:hover { color: var(--brand-light); }
 
       <a href="https://www.skool.com/" target="_blank" rel="noopener" class="skool-btn" id="skoolBtn">
         <span class="skool-mark">S</span>
-        <span>Join the Free Skool Community</span>
+        <span class="skool-btn-text">
+          <span class="skool-btn-title">Step Inside the MH Inner Circle</span>
+          <span class="skool-btn-sub">Where top closers swap the plays they don't post online →</span>
+        </span>
       </a>
 
       <p class="form-footnote">
@@ -876,10 +901,10 @@ footer a:hover { color: var(--brand-light); }
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
       </div>
       <h3 class="success-title">Check your inbox.</h3>
-      <p class="success-msg">Your copy of <em>Closing With Confidence</em> is on the way. While you wait — join the free Skool community and start applying this with other pros.</p>
+      <p class="success-msg">Your copy of <em>Closing With Confidence</em> is on the way. While you wait — claim your spot in the <strong>MH Inner Circle</strong> and see what top closers are running this week.</p>
       <a href="https://www.skool.com/" target="_blank" rel="noopener" class="success-download">
         <span class="skool-mark" style="background:#FFC700;color:#0F1B2D;width:20px;height:20px;display:inline-grid;place-items:center;font-weight:900;font-size:12px;border-radius:3px;">S</span>
-        Join the Skool Community →
+        Step Inside the MH Inner Circle →
       </a>
     </div>
   </div>
@@ -981,7 +1006,7 @@ footer a:hover { color: var(--brand-light); }
     <div class="final-eyebrow">One more thing —</div>
     <h2 class="final-head">Ready to <em>close</em> with more confidence?</h2>
     <p class="final-sub">
-      Grab the guide. Join the Skool community. Start running the process tomorrow morning.
+      Grab the guide. Step inside the MH Inner Circle. Start running the process tomorrow morning.
     </p>
     <a href="#form" class="final-btn">
       Get the Guide
